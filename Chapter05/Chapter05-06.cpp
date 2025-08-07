@@ -13,9 +13,9 @@ class SMS {
     SMS(string s, string r, string t) : sender(s), receiver(r), text(t) { }
 
     void print() {
-        cout << "¹ß½ÅÀÚ: " << sender;
-        cout << " ¼ö½ÅÀÚ: " << receiver;
-        cout << " ³»¿ë: " << text << endl;
+        cout << "ë°œì‹ ìž: " << sender;
+        cout << " ìˆ˜ì‹ ìž: " << receiver;
+        cout << " ë‚´ìš©: " << text << endl;
     }
 
     void setSender(string s) { sender = s; }
@@ -27,14 +27,14 @@ int main() {
     SMS obj1;
     obj1.setSender("010-1234-5678");
     obj1.setReceiver("010-1234-5679");
-    obj1.setText("C++°øºÎ´Â ÀßµÇ°¡³ª¿ä?");
+    obj1.setText("C++ê³µë¶€ëŠ” ìž˜ë˜ê°€ë‚˜ìš”?");
 
-    cout << "¹®ÀÚ¸Þ½ÃÁö #1" << endl;
+    cout << "ë¬¸ìžë©”ì‹œì§€ #1" << endl;
     obj1.print();
     cout << endl;
 
-    SMS obj2 {"010-1234-5679", "010-1234-5678", "³× 5Àå±îÁö´Â ¹®Á¦ ¾ø³×¿ä."};
-    cout << "¹®ÀÚ¸Þ½ÃÁö #2" << endl;
+    SMS obj2 {"010-1234-5679", "010-1234-5678", "ë„¤ 5ìž¥ê¹Œì§€ëŠ” ë¬¸ì œ ì—†ë„¤ìš”."};
+    cout << "ë¬¸ìžë©”ì‹œì§€ #2" << endl;
     obj2.print();
 
     return 0;
