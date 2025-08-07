@@ -27,7 +27,7 @@ class Date {
         cout << year << "." << month << "." << day << endl;
     }
 
-    void print2() {     // ±×³É ¹®Á¦¿¡¼­ Áßº¹Á¤ÀÇ ÇØº¸¶ó°í ÇØ¼­ ¸¸µë
+    void print2() {     // ê·¸ëƒ¥ ë¬¸ì œì—ì„œ ì¤‘ë³µì •ì˜ í•´ë³´ë¼ê³  í•´ì„œ ë§Œë“¬
         cout << year << "|" << month << "|" << day << endl;
     }
 
@@ -44,7 +44,7 @@ int main() {
     obj1.print1();
 
     Date obj2 = obj1.nextMonth();
-    obj2.print1();     // °ýÈ£ ²À ¾ÈÇØµµ µÊ
+    obj2.print1();     // ê´„í˜¸ ê¼­ ì•ˆí•´ë„ ë¨
 
     return 0;
 }
