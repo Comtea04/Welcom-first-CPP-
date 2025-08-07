@@ -23,22 +23,22 @@ class Movie {
 
 int main() {
     Movie obj1;
-    obj1.setTitle("Å¸ÀÌÅ¸´Ğ");
-    obj1.setDirector("Á¦ÀÓ½º Ä«¸Ş·Ğ");
+    obj1.setTitle("íƒ€ì´íƒ€ë‹‰");
+    obj1.setDirector("ì œì„ìŠ¤ ì¹´ë©”ë¡ ");
     obj1.setRating(9.5);
 
-    cout << "¿µÈ­ #1: " << endl;
-    cout << "¿µÈ­ Á¦¸ñ: " << obj1.getTitle() << endl;
-    cout << "¿µÈ­ °¨µ¶: " << obj1.getDirector() << endl;
-    cout << "¿µÈ­ ÆòÁ¡: " << obj1.getRating() << endl;
+    cout << "ì˜í™” #1: " << endl;
+    cout << "ì˜í™” ì œëª©: " << obj1.getTitle() << endl;
+    cout << "ì˜í™” ê°ë…: " << obj1.getDirector() << endl;
+    cout << "ì˜í™” í‰ì : " << obj1.getRating() << endl;
     cout << endl;
 
-    Movie obj2 {"Áö¿À½ºÅè", "µò µ¥ºí¸°", 8.34};
+    Movie obj2 {"ì§€ì˜¤ìŠ¤í†°", "ë”˜ ë°ë¸”ë¦°", 8.34};
 
-    cout << "¿µÈ­ #2: " << endl;
-    cout << "¿µÈ­ Á¦¸ñ: " << obj2.getTitle() << endl;
-    cout << "¿µÈ­ °¨µ¶: " << obj2.getDirector() << endl;
-    cout << "¿µÈ­ ÆòÁ¡: " << obj2.getRating() << endl;
+    cout << "ì˜í™” #2: " << endl;
+    cout << "ì˜í™” ì œëª©: " << obj2.getTitle() << endl;
+    cout << "ì˜í™” ê°ë…: " << obj2.getDirector() << endl;
+    cout << "ì˜í™” í‰ì : " << obj2.getRating() << endl;
 
     return 0;
 }
