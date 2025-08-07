@@ -8,13 +8,13 @@ class Book {
     string author;
 
     public:
-    // »ı¼ºÀÚ
+    // ìƒì„±ì
     Book(string t, string a) {
         title = t;
         author = a;
     }
 
-    // Á¢±ÙÀÚ¿Í ¼³Á¤ÀÚ
+    // ì ‘ê·¼ìì™€ ì„¤ì •ì
     string getTitle() { return title; }
     string getAuthor() { return author; }
     void setTitle(string t) { title = t; }
@@ -24,8 +24,8 @@ class Book {
 int main() {
     Book obj {"Great C++", "Bob"};
 
-    cout << "Ã¥ ÀÌ¸§: " << obj.getTitle() << endl;
-    cout << "Ã¥ ÀúÀÚ: " << obj.getAuthor() << endl;
+    cout << "ì±… ì´ë¦„: " << obj.getTitle() << endl;
+    cout << "ì±… ì €ì: " << obj.getAuthor() << endl;
 
     return 0;
 }
