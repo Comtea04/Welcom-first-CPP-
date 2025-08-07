@@ -14,9 +14,9 @@ class Airplane {
     Airplane(string n, int c, int s) : name(n), capacity(c), speed(s) { }
 
     void print() {
-        cout << "ºñÇà±âÀÇ ÀÌ¸§: " << name << endl;
-        cout << "ºñÇà±âÀÇ ¿ë·®: " << capacity << endl;
-        cout << "ºñÇà±âÀÇ ¼Óµµ: " << speed << " Km/h" << endl; 
+        cout << "ë¹„í–‰ê¸°ì˜ ì´ë¦„: " << name << endl;
+        cout << "ë¹„í–‰ê¸°ì˜ ìš©ëŸ‰: " << capacity << endl;
+        cout << "ë¹„í–‰ê¸°ì˜ ì†ë„: " << speed << " Km/h" << endl; 
     }
 
     string getName() { return name; }
@@ -28,18 +28,18 @@ class Airplane {
 };
 
 int main() {
-    Airplane obj1 {"º¸À× 787", 900, 300};        // Airplane(string n, int c, int s)
+    Airplane obj1 {"ë³´ìž‰ 787", 900, 300};        // Airplane(string n, int c, int s)
     
     Airplane obj2;                              // Airplane()
-    obj2.setName("¿¡¾î¹ö½º 350");
+    obj2.setName("ì—ì–´ë²„ìŠ¤ 350");
     obj2.setCapacity(400);
     obj2.setSpeed(1000);
 
-    cout << "ºñÇà±â #1" << endl;
+    cout << "ë¹„í–‰ê¸° #1" << endl;
     obj1.print();
     cout << endl;
 
-    cout << "ºñÇà±â #2" << endl;
+    cout << "ë¹„í–‰ê¸° #2" << endl;
     obj2.print();
 
     return 0;
