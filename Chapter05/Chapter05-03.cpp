@@ -13,16 +13,16 @@ class Box {
 
     double getVolume() { return length*width*height; }
 
-    bool empty(Box& b) {        // ¹Ú½º°¡ ºñ¾îÀÖ´ÂÁö È®ÀÎ(¾î¶²½ÄÀ¸·Î È®ÀÎÇØ¾ß µÇ´ÂÁö ¸ğ¸£ÙÀ½)
+    bool empty(Box& b) {        // ë°•ìŠ¤ê°€ ë¹„ì–´ìˆëŠ”ì§€ í™•ì¸(ì–´ë–¤ì‹ìœ¼ë¡œ í™•ì¸í•´ì•¼ ë˜ëŠ”ì§€ ëª¨ë¥´Âç‰¡)
         if (b.getVolume() == 0) return true;
         else return false;
     }
 
     void print(Box& b) {
-        cout << "»óÀÚÀÇ ±æÀÌ: " << length << endl;
-        cout << "»óÀÚÀÇ ³Êºñ: " << width << endl;
-        cout << "»óÀÚÀÇ ³ôÀÌ: " << height << endl;
-        cout << "»óÀÚÀÇ ºÎÇÇ: " << b.getVolume() << endl;
+        cout << "ìƒìì˜ ê¸¸ì´: " << length << endl;
+        cout << "ìƒìì˜ ë„ˆë¹„: " << width << endl;
+        cout << "ìƒìì˜ ë†’ì´: " << height << endl;
+        cout << "ìƒìì˜ ë¶€í”¼: " << b.getVolume() << endl;
     }
     
     double getHeight() { return height; }
@@ -36,13 +36,13 @@ class Box {
 
 int main() {
     Box obj1;
-    cout << "»óÀÚ #1" << endl;
+    cout << "ìƒì #1" << endl;
     obj1.print(obj1);
     cout << endl;
     
     Box obj2 {3, 2, 5};
     obj2.setHeight(4);
-    cout << "»óÀÚ #2" << endl;
+    cout << "ìƒì #2" << endl;
     obj2.print(obj2);
     
     return 0;
