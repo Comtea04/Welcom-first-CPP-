@@ -7,13 +7,13 @@ int main()
 {
 	string S, V, O;
 
-    cout << "ÁÖ¾î: ";
+    cout << "ì£¼ì–´: ";
     cin >> S;
 
-    cout << "µ¿»ç: ";
+    cout << "ë™ì‚¬: ";
     cin >> V;
 
-    cout << "¸ñÀû¾î: ";
+    cout << "ëª©ì ì–´: ";
     cin >> O;
 
     cout << S << " " << V << " a " << O << endl;
