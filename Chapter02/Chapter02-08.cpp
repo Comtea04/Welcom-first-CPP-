@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int num;
-    cout << "Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ";
+    cout << "ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ";
     cin >> num;
     
     for (int i=1; i<num; i++) {

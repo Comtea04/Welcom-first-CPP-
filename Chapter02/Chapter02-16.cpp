@@ -7,21 +7,21 @@ int main()
 {
     srand(time(NULL));
     
-    double cash=50, bets=0, win=0;      // ë‚˜ëˆ—ì…ˆ í•  ë•Œ í¸ì˜ë¥¼ ìœ„í•´ ì‹¤ìˆ˜í˜•ìœ¼ë¡œ ì§€ì •(ë¬¸ì œ ì—†ìŒ)
-    cout << "ì´ˆê¸° ê¸ˆì•¡ $50" << endl;
-    cout << "ëª©í‘œ ê¸ˆì•¡ $250" << endl;
+    double cash=50, bets=0, win=0;      // ³ª´°¼À ÇÒ ¶§ ÆíÀÇ¸¦ À§ÇØ ½Ç¼öÇüÀ¸·Î ÁöÁ¤(¹®Á¦ ¾øÀ½)
+    cout << "ÃÊ±â ±İ¾× $50" << endl;
+    cout << "¸ñÇ¥ ±İ¾× $250" << endl;
     
     while (0 < cash && cash <250) {
         bets++;
-        if (rand()%2==1) {      // ìŠ¹ë¦¬
+        if (rand()%2==1) {      // ½Â¸®
             cash++;
             win++;
         }
-        else             cash--;    // íŒ¨ë°°
+        else             cash--;    // ÆĞ¹è
     }
     
-    cout << bets << " ì¤‘ì˜ " << win << "ë²ˆ ìŠ¹ë¦¬" << endl;
-    cout << "ì´ê¸´ í™•ë¥ =" << (win / bets) << endl;
+    cout << bets << " ÁßÀÇ " << win << "¹ø ½Â¸®" << endl;
+    cout << "ÀÌ±ä È®·ü=" << (win / bets) << endl;
     
     
     return 0;

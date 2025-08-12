@@ -8,13 +8,13 @@ int main()
     int sum = 0;
     
     do {
-        cout << "Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ";
+        cout << "ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ";
         cin >> num;
         
         sum += num;
     } while (num != 0);
     
-    cout << "ÇÕ°è=" << sum << endl;
+    cout << "í•©ê³„=" << sum << endl;
     
     return 0;
 }

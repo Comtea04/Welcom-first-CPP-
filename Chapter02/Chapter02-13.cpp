@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout << "¸î Ç×±îÁö ±¸ÇÒ±î¿ä: ";
+    cout << "ëª‡ í•­ê¹Œì§€ êµ¬í• ê¹Œìš”: ";
     cin >> n;
     
     int seq[n] = {1, 0, 1, };
