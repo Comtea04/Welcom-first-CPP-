@@ -7,14 +7,14 @@ int main()
     const double pi = 3.14;
 	double r;
 
-    cout << "¹ÝÁö¸§: ";
+    cout << "ë°˜ì§€ë¦„: ";
     cin >> r;
 
     double S = 4 * pi * (r*r);
     double V = (4.0/3.0) * pi * (r*r*r);
     
-    cout << "Ç¥¸éÀû: " << S << endl;
-    cout << "ºÎÇÇ: " << V << endl;
+    cout << "í‘œë©´ì : " << S << endl;
+    cout << "ë¶€í”¼: " << V << endl;
 
 	return 0;
 }

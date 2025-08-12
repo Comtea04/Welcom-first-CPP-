@@ -6,17 +6,17 @@ int main()
 {
 	int hour, min, sec;
 
-    cout << "½Ã: ";
+    cout << "ì‹œ: ";
     cin >> hour;
 
-    cout << "ºĞ: ";
+    cout << "ë¶„: ";
     cin >> min;
 
-    cout << "ÃÊ: ";
+    cout << "ì´ˆ: ";
     cin >> sec;
 
     int result = 3600*hour + 60*min + sec;
-    cout << "ÀüÃ¼ ÃÊ: " << result << endl;
+    cout << "ì „ì²´ ì´ˆ: " << result << endl;
 
 	return 0;
 }

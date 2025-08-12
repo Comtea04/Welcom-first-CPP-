@@ -7,10 +7,10 @@ int main()
     const double k = 3.3058;
 	double P;
 
-    cout << "Æò: ";
+    cout << "í‰: ";
     cin >> P;
 
-    cout << "Æò¹æ¹ÌÅÍ: " << P*k << endl;
+    cout << "í‰ë°©ë¯¸í„°: " << P*k << endl;
 
 	return 0;
 }
