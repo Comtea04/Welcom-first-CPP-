@@ -17,7 +17,7 @@ int main()
         if (L[i] > L[max_idx]) max_idx = i;
     }
     
-    cout << "°¡Àå ¸¹ÀÌ »ý¼ºµÈ ¼ö:  " << max_idx << endl;
+    cout << "ê°€ìž¥ ë§Žì´ ìƒì„±ëœ ìˆ˜:  " << max_idx << endl;
     
     return 0;
 }
