@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     string str;
-    cout << "¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À: ";
+    cout << "ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹œì˜¤: ";
     getline(cin, str);
     int counter[256] = {0, };    
 
