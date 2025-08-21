@@ -12,10 +12,10 @@ class Book {
 int main() {
     Book obj;
 
-    cout << "Ã¥ ÀÌ¸§: ";
+    cout << "ì±… ì´ë¦„: ";
     getline(cin, obj.title);
 
-    cout << "Ã¥ ÀúÀÚ: ";
+    cout << "ì±… ì €ìž: ";
     getline(cin, obj.author);
 
     return 0;

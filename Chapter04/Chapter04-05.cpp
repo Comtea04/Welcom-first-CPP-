@@ -12,7 +12,7 @@ class Dice {
     }
     
     void print() {
-        cout << "ÁÖ»çÀ§ °ª=" << face << endl;
+        cout << "ì£¼ì‚¬ìœ„ ê°’=" << face << endl;
     }
 };
 

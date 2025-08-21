@@ -46,7 +46,7 @@ int main() {
     
     cout << "[" << obj.getLength() << "," << obj.getWidth() << "," << obj.getHeight() << "]" << endl;
 
-    cout << "»óÀÚÀÇ ºÎÇÇ: " << obj.getVolume() << endl;
+    cout << "ìƒìì˜ ë¶€í”¼: " << obj.getVolume() << endl;
     
     return 0;
 }

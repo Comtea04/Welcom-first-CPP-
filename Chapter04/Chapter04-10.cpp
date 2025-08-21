@@ -11,17 +11,17 @@ class BankAccount {
         number = number_;
         balance = balance_;
 
-        cout << "ÇöÀç ÀÜ¾×: " << balance << endl;
+        cout << "í˜„ìž¬ ìž”ì•¡: " << balance << endl;
     }
 
     void deposit(int money) {
         balance += money;
-        cout << "after deposit(" << money << ") ÇöÀç ÀÜ¾×: " << balance << endl;
+        cout << "after deposit(" << money << ") í˜„ìž¬ ìž”ì•¡: " << balance << endl;
     }
 
     void withdraw(int money) {
         balance -= money;
-        cout << "after withdraw(" << money << ") ÇöÀç ÀÜ¾×: " << balance << endl;
+        cout << "after withdraw(" << money << ") í˜„ìž¬ ìž”ì•¡: " << balance << endl;
     }
 };
 

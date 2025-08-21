@@ -18,7 +18,7 @@ class Employee {
 
 int main() {
     Employee obj;
-    obj.name = "±èÃ¶¼ö";
+    obj.name = "ê¹€ì² ìˆ˜";
     obj.age = 38;
     obj.salary = 2000000;
 

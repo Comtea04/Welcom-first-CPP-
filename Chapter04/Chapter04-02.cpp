@@ -16,16 +16,16 @@ class Computer {
     }
 
     void print() {
-        cout << "ÀÌ¸§: " << name << endl;
+        cout << "ì´ë¦„: " << name << endl;
         cout << "RAM: " << RAM << endl;
-        cout << "CPU ¼Óµµ: " << cpu_speed << endl;
+        cout << "CPU ì†ë„: " << cpu_speed << endl;
     }
 };
 
 int main() {
     Computer obj;
     
-    obj.setComputer("¿ÀÇÇ½ºÄÄÇ»ÅÍ", 8, 4.2);
+    obj.setComputer("ì˜¤í”¼ìŠ¤ì»´í“¨í„°", 8, 4.2);
     obj.print();
 
     return 0;

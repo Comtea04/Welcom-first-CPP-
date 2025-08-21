@@ -14,15 +14,15 @@ class Person {
     }
 
     void print() {
-        cout << "ÀÌ¸§ : " << name << endl;
-        cout << "³ªÀÌ : " << age << endl;
+        cout << "ì´ë¦„ : " << name << endl;
+        cout << "ë‚˜ì´ : " << age << endl;
     }
 };
 
 int main() {
     Person obj;
     
-    obj.setPerson("±èÃ¶¼ö", 21);
+    obj.setPerson("ê¹€ì² ìˆ˜", 21);
     obj.print();
 
     return 0;
