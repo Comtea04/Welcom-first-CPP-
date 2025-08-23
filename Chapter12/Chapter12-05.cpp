@@ -1,42 +1,41 @@
 #include <iostream>
-#include <string>
+#include <vector>
 
 using namespace std;
 
-class Time {
-    int hours;
-    int minutes;
-
+class Animal {
 public:
-    Time(int hours, int minutes) : hours(hours), minutes(minutes) { }
-    ~Time() { }
+    virtual void speak() = 0;
+    virtual ~Animal() { }
+};
 
-    Time& operator++() {
-        minutes++;
-        if (minutes == 60) {
-            hours++;
-            minutes = 0;
-        }
-        // hour + (++minutes/60);       // 捞犯霸 秦档 凳
-        // minutes%=60;
-
-        return *this;
+class Dog : public Animal {
+public:
+    void speak() {
+        cout << "港港!" << endl;
     }
-    
-    void displayTime() {
-        cout << hours << ": " << minutes << endl;
+};
+
+class Cat : public Animal {
+public:
+    void speak() {
+        cout << "具克!" << endl;
     }
 };
 
 int main() {
-    Time myTime {10, 59};
-    myTime.displayTime();
+    vector <Animal*> Barn;
+    Barn.push_back(new Dog());
+    Barn.push_back(new Cat());
+    Barn.push_back(new Cat());
+
+    for (auto& a : Barn) {
+        a->speak();
+    }
+
+    for (auto& a : Barn) {
+        delete a;
+    }
     
-    ++myTime;
-    myTime.displayTime();
-
-    ++myTime;
-    myTime.displayTime();
-
     return 0;
 }
