@@ -2,41 +2,60 @@
 
 using namespace std;
 
-class Box {
-    double length;
-    double width;
-    double height;
+class Shape {
+    int x, y;
 public:
-    Box(double l=0, double w=0, double h=0) : length(l), width(w), height(h) { }
-    double getVolume(void) const{
-        return length*width*height;
+    virtual double getArea() = 0;
+};
+
+// 사각형 클래스
+class Rect : public Shape {
+    int width;
+    int height;
+public:
+    Rect(int width, int height) : width(width), height(height) { }
+    ~Rect() { }
+
+    double getArea() {
+        return width*height;
     }
-    Box operator+ (const Box& obj2) {
-        Box obj1 {length+obj2.length, width+obj2.width, height+obj2.height};
-        return obj1;
+};
+
+// 원 클래스
+class Circle : public Shape {
+    int radius;
+public:
+    Circle(int radius) : radius(radius) { }
+    ~Circle() { }
+
+    double getArea() {
+        return 3.14*radius*radius;
     }
-    void print() {
-        cout << "상자의 길이: " << length << endl;
-        cout << "상자의 너비: " << width << endl;
-        cout << "상자의 높이: " << height << endl;
-        cout << "상자의 부피: " << getVolume() << endl;
+};
+
+// 삼각형 클래스
+class Traiangle : public Shape {
+    int width;
+    int height;
+public:
+    Traiangle(int width, int height) : width(width), height(height) { }
+    ~Traiangle() { }
+
+    double getArea() {
+        return width*height / 2.0;
     }
 };
 
 int main() {
-    Box a{10, 10, 10}, b{20,20,20}, c;
-    c = a+b;
+    // 각 객체를 Shape* 포인터 배열 속에 동적으로 저장
+    Shape* list[3] = {new Rect{41, 67}, new Circle(69), new Traiangle(29, 124)};
 
-    cout << "상자 #1" << endl;
-    a.print();
-    cout << endl;
+    for (int i=0; i<3; i++) {
+        cout << "도형 #" << i << "의 면적: " << list[i]->getArea() << endl;
+    }
 
-    cout << "상자 #2" << endl;
-    b.print();
-    cout << endl;
-
-    cout << "상자 #3" << endl;
-    c.print();
+    // 동적 메모리 해제
+    for (int i=9; i<3; i++) delete list[i];
 
     return 0;
 }

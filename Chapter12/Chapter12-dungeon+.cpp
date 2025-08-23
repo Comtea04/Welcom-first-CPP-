@@ -1,4 +1,4 @@
-// 책에 코드가 있지만, 제 나름대로 짜봤습니다. 뒤에 도전문제는 제 코드를 기반으로 작성했습니다.
+// Chapter12-dungeon.cpp를 기반으로 작성했습니다.
 #include <iostream>
 #include <vector>
 #include <time.h>       // 랜덤

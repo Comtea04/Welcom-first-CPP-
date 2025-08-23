@@ -2,34 +2,37 @@
 
 using namespace std;
 
-class Box {
-    double length;
-    double width;
-    double height;
+class GameCharacter {
 public:
-    Box(double l=0, double w=0, double h=0) : length(l), width(w), height(h) { }
-    double getVolume(void) const{
-        return length*width*height;
+    GameCharacter() { }
+    virtual void draw() = 0;
+};
+
+class Hobbit : public GameCharacter {
+public:
+    Hobbit() { }
+    void draw() {
+        cout << "호빗을 그립니다." << endl;
     }
-    bool operator== (const Box& obj2) {
-        Box obj1 {length, width, height};
-        if (obj1.getVolume()==obj2.getVolume())
-            return true;
-        else return false;
-    }
-    friend void printBox(Box box) {
-        cout << "상자의 길이: " << box.length << endl;
-        cout << "상자의 너비: " << box.width << endl;
-        cout << "상자의 높이: " << box.height << endl;
-        cout << "상자의 부피: " << box.getVolume() << endl;
+};
+
+class Sorcerer : public GameCharacter {
+public:
+    Sorcerer() { }
+    void draw() {
+        cout << "주술사를 그립니다." << endl;
     }
 };
 
 int main() {
-    Box a{10, 10, 10};
+    GameCharacter* arr[3];
+    arr[0] = new Hobbit;
+    arr[1] = new Sorcerer;
+    arr[2] = new Hobbit;
 
-    cout << "상자 #1" << endl;
-    printBox(a);
+    for (auto& c : arr) {
+        c->draw();
+    }
 
     return 0;
 }
