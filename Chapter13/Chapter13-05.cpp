@@ -1,41 +1,31 @@
 #include <iostream>
-#include <vector>
+#include <string>
+#include <fstream>
 
 using namespace std;
 
-class Animal {
-public:
-    virtual void speak() = 0;
-    virtual ~Animal() { }
-};
-
-class Dog : public Animal {
-public:
-    void speak() {
-        cout << "Â¸Ã›Â¸Ã›!" << endl;
-    }
-};
-
-class Cat : public Animal {
-public:
-    void speak() {
-        cout << "Â¾ÃŸÂ¿Ã‹!" << endl;
-    }
-};
-
-int main() {
-    vector <Animal*> Barn;
-    Barn.push_back(new Dog());
-    Barn.push_back(new Cat());
-    Barn.push_back(new Cat());
-
-    for (auto& a : Barn) {
-        a->speak();
+int main()
+{
+    ifstream is1("input.txt");
+    ifstream is2("input copy.txt");
+    if (!(is1 && is2)) {
+        cerr << "ÆÄÀÏ ¿ÀÇÂ ½ÇÆÐ" << endl;
+        exit(1);
     }
 
-    for (auto& a : Barn) {
-        delete a;
+    string line1, line2;
+    bool isSame=true;
+    while (is1 && is2) {
+        getline(is1, line1);
+        getline(is2, line2);
+    
+        if (line1 != line2) isSame = false;
     }
+
+    if (isSame)
+        cout << "Ç¥ÀýÀÔ´Ï´Ù." << endl;
+    else
+        cout << "Ç¥ÀýÀÌ ¾Æ´Õ´Ï´Ù." << endl;
     
     return 0;
 }
