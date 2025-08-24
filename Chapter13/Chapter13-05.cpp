@@ -12,14 +12,14 @@ public:
 class Dog : public Animal {
 public:
     void speak() {
-        cout << "港港!" << endl;
+        cout << "赂脹赂脹!" << endl;
     }
 };
 
 class Cat : public Animal {
 public:
     void speak() {
-        cout << "具克!" << endl;
+        cout << "戮脽驴脣!" << endl;
     }
 };
 
