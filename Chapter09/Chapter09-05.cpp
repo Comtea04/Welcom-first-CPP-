@@ -29,7 +29,7 @@ int main() {
     Box b1;
     Box b2(3, 4, 5);
 
-    cout << "ÀüÃ¼ °´Ã¼ ¼ö: " << Box::getCount() << endl;
+    cout << "ì „ì²´ ê°ì²´ ìˆ˜: " << Box::getCount() << endl;
 
     return 0;
 }

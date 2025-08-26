@@ -26,7 +26,7 @@ int main() {
     c2.radius = 20;
     c2.print();
 
-    cout << "´õ Å« ¿øÀº ´ÙÀ½°ú °°´Ù." << endl;
+    cout << "ë” í° ì›ì€ ë‹¤ìŒê³¼ ê°™ë‹¤." << endl;
     getLargerCircle(c1, c2).print();
 
     return 0;
