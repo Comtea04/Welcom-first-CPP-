@@ -17,8 +17,8 @@ int main()
         coin[flip()]++;
     }
     
-    cout << "µ¿ÀüÀÇ ¾Õ¸é:  " << coin[0] << endl;
-    cout << "µ¿ÀüÀÇ µŞ¸é:  " << coin[1] << endl;
+    cout << "ë™ì „ì˜ ì•ë©´:  " << coin[0] << endl;
+    cout << "ë™ì „ì˜ ë’·ë©´:  " << coin[1] << endl;
     
     return 0;
 }
