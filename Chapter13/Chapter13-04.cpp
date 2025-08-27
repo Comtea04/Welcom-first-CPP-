@@ -8,7 +8,7 @@ int main()
 {
     fstream iofile("input.txt", ios::in | ios::out);
     if (!iofile) {
-        cerr << "ÆÄÀÏ ¿ÀÇÂ ½ÇÆÐ" << endl;
+        cerr << "íŒŒì¼ ì˜¤í”ˆ ì‹¤íŒ¨" << endl;
         exit(1);
     }
 

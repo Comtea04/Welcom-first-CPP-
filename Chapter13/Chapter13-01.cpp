@@ -8,7 +8,7 @@ int main()
     ofstream os("sample.txt");
     
     if (!os) {
-        cerr << "ÆÄÀÏ ¿ÀÇÂ ½ÇÆÐ" << endl;
+        cerr << "íŒŒì¼ ì˜¤í”ˆ ì‹¤íŒ¨" << endl;
         exit(1);
     }
     
