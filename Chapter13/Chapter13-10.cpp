@@ -7,7 +7,7 @@ int main()
 {
     ifstream is("input.txt");
     if (!is) {
-        cerr << "ÆÄÀÏ ¿ÀÇÂ ½ÇÆĞ" << endl;
+        cerr << "íŒŒì¼ ì˜¤í”ˆ ì‹¤íŒ¨" << endl;
         exit(1);
     }
 
@@ -17,7 +17,7 @@ int main()
         cnt++;
     }
 
-    cout << "´Ü¾îÀÇ ¼ö: " << cnt << endl;
+    cout << "ë‹¨ì–´ì˜ ìˆ˜: " << cnt << endl;
     
     return 0;
 }
