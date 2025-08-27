@@ -17,7 +17,7 @@ public:
             hours++;
             minutes = 0;
         }
-        // hour + (++minutes/60);       // ÀÌ·¸°Ô ÇØµµ µÊ
+        // hour + (++minutes/60);       // ì´ë ‡ê²Œ í•´ë„ ë¨
         // minutes%=60;
 
         return *this;
