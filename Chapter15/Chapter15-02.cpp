@@ -16,7 +16,7 @@ int main() {
 
     int count = count_if(values.begin(), values.end(), [](int x)
                                                 { return (x%2==0); });
-    cout << "°ªÀÌ Â¦¼öÀÎ ¿ä¼ÒÀÇ °³¼ö: " << count << endl;
+    cout << "ê°’ì´ ì§ìˆ˜ì¸ ìš”ì†Œì˜ ê°œìˆ˜: " << count << endl;
 
     return 0;
 }
